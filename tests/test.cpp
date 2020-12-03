@@ -5,7 +5,7 @@
 
 TEST(Example, EmptyTest) { EXPECT_TRUE(true); }
 TEST(Parser, PathToFile) {
-    Parser A("/Users/nishaque/Desktop/33/С++/lab-04-boost-filesystem/ftp");
+    Parser A("/home/travis/build/nishaque/lab-04-boost-filesystem//ftp");
     std::cout << "broker:" << A.getBroker("00001024");
     ASSERT_EQ(A.getBroker("00001024"), "alpha");
 }
