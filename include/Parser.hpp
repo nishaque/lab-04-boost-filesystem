@@ -4,6 +4,9 @@
 #include <boost/filesystem.hpp>
 #include <iostream>
 #include <string>
+#include <map>
+#include <utility>
+#include <vector>
 namespace bfs = boost::filesystem;
 
 
