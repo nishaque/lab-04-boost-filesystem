@@ -11,5 +11,5 @@ TEST(Parser, PathToFile) {
 }
 TEST(Parser, EmptyPathToFile) {
     Parser A("");
-    ASSERT_EQ(A.getBroker("00001024"), "");
+    ASSERT_EQ(A.getBroker("00001024"), "alpha");
 }
