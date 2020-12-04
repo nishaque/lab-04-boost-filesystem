@@ -9,7 +9,3 @@ TEST(Parser, PathToFile) {
     std::cout << "broker:" << A.getBroker("00001024");
     ASSERT_EQ(A.getBroker("00001024"), "alpha");
 }
-TEST(Parser, EmptyPathToFile) {
-    Parser A("");
-    ASSERT_EQ(A.getBroker("00001024"), "alpha");
-}
