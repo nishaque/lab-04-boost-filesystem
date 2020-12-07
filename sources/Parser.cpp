@@ -75,7 +75,7 @@ bool Parser::isNumber(const std::string &s) {
 }
 std::string Parser::directory(const bfs::path &p) {
   std::string s = p.string();
-  std::string dir="";
+  std::string dir= "";
   size_t i = s.length() - 1;
   while (s[i] != '/') i--;
   i--;
@@ -85,7 +85,9 @@ std::string Parser::directory(const bfs::path &p) {
   }
   return dir;
 }
-std::string Parser::getBroker(const std::string& key) { return balance[key].first; }
+std::string Parser::getBroker(const std::string& key) {
+  return balance[key].first;
+}
 
 std::ostream &operator<<(std::ostream &out, const Parser &A) {
   for (auto &it : A.balance) {
