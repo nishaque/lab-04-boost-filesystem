@@ -11,7 +11,7 @@ TEST(Parser, PathToFile) {
 }
 TEST(Parser, Printing) {
   std::ostringstream output;
-  Parser A("/Users/nishaque/Desktop/lab-04-boost-filesystem/ftp");
+  Parser A("/home/travis/build/nishaque/lab-04-boost-filesystem//ftp");
   output << A;
   EXPECT_EQ(output.str(),
             R"(alpha balance_00001024_20191811.txt
