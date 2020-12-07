@@ -75,7 +75,7 @@ bool Parser::isNumber(const std::string &s) {
 }
 std::string Parser::directory(const bfs::path &p) {
   std::string s = p.string();
-  std::string dir= "";
+  std::string dir = "";
   size_t i = s.length() - 1;
   while (s[i] != '/') i--;
   i--;
